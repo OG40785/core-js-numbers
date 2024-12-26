@@ -476,7 +476,6 @@ function isInteger(number) {
 function getFloatOnString(/* str */) {
   throw new Error('Not implemented');
 }
-
 /**
  * Returns an integer of the specified base or, if the number cannot be parsed
  * from the argument, returns NaN.
@@ -494,7 +493,6 @@ function getFloatOnString(/* str */) {
 function getIntegerOnString(/* str, base */) {
   throw new Error('Not implemented');
 }
-
 /**
  * Returns whether a number is a safe integer.
  *
@@ -564,8 +562,8 @@ function roundToNearestInteger(number) {
  * 5.4  => 5
  * -5.5 => -5
  */
-function getIntegerPartNumber(/* number */) {
-  throw new Error('Not implemented');
+function getIntegerPartNumber(number) {
+  return Math.trunc(number);
 }
 
 /**
